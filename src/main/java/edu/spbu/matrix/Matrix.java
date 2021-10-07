@@ -3,21 +3,21 @@ package edu.spbu.matrix;
 /**
  *
  */
-public interface Matrix
-{
+public interface Matrix {
   /**
-   * однопоточное умнджение матриц
-   * должно поддерживаться для всех 4-х вариантов
-   * @param o
+   * однопоточное умнджение матриц должно поддерживаться для всех 4-х вариантов
+   * 
+   * @param matrix
    * @return
    */
-  Matrix mul(Matrix o);
+  Matrix mul(Matrix matrix);
 
   /**
    * многопоточное умножение матриц
-   * @param o
+   * 
+   * @param matrix
    * @return
    */
-  Matrix dmul(Matrix o);
+  Matrix dmul(Matrix matrix);
 
 }
